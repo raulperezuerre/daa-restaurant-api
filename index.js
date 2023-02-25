@@ -4,7 +4,11 @@ const cors = require('cors');
 
 const app = express();
 const port = 3000;
-const users = [{ name: 'Hugo' }, { name: 'Paco' }, { name: 'Luis' }];
+const users = [
+  { name: 'Hugo', color: 'rojo' },
+  { name: 'Paco', color: 'azul' },
+  { name: 'Luis', color: 'verde' },
+];
 
 app.use(bodyParser.json());
 app.use(cors());
